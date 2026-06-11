@@ -1,0 +1,21 @@
+# ── Datos crudos ───────────────────────────────────────────
+# Descargar desde las fuentes indicadas en el README
+data/nafta.csv
+data/ipc.csv
+data/tipo_cambio.csv
+
+# El SMVM sí se incluye porque fue generado en este proyecto
+# data/smvm_historico.csv
+
+# ── Jupyter ────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Python ─────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Sistema operativo ──────────────────────────────────────
+.DS_Store
+Thumbs.db
