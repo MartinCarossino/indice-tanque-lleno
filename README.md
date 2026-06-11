@@ -1,11 +1,13 @@
-# 🛢️ Índice del Tanque Lleno
+# Índice del Tanque Lleno
 ### Poder adquisitivo real en Argentina medido en litros de nafta (2017–2026)
+
+[![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MartinCarossino/indice-tanque-lleno/blob/main/tanque_lleno.ipynb)
 
 ---
 
-## ¿De qué trata este proyecto?
+## De qué trata este proyecto
 
-El precio de la nafta en pesos no dice nada por sí solo.  
+El precio de la nafta en pesos no dice nada por sí solo.
 Este proyecto responde una pregunta más útil:
 
 > **¿Cuántos litros de nafta súper podés comprar con un día de trabajo al salario mínimo?**
@@ -21,8 +23,8 @@ Ese número — el *índice del tanque lleno* — refleja el poder adquisitivo r
 | 1 | El precio nominal se multiplicó por **83x**: de $20,71 (ene 2017) a $1.724 (ene 2026) |
 | 2 | En términos reales, la nafta es **18,8% más barata** que en 2017 — la inflación (+10.150%) superó al aumento de la nafta (+8.227%) |
 | 3 | El poder adquisitivo cayó **18,5%**: de 12,9 litros/día en 2017 a 10,6 litros/día en 2026 |
-| 4 | El **peor momento** fue julio 2022: 5,2 litros/día |
-| 5 | En dólares, el precio promedio fue **U$S 1,07** el litro durante 9 años — notablemente estable |
+| 4 | El peor momento fue julio 2022: 5,2 litros/día |
+| 5 | En dólares, el precio promedio fue U$S 1,07 el litro durante 9 años — notablemente estable |
 
 ---
 
@@ -33,7 +35,7 @@ Ese número — el *índice del tanque lleno* — refleja el poder adquisitivo r
 02 — Limpieza y preparación (filtrado, merge de 4 datasets)
 03 — Evolución nominal del precio
 04 — Deflactación: precio real vs. inflación
-05 — Índice del tanque lleno ← núcleo del proyecto
+05 — Índice del tanque lleno (núcleo del proyecto)
 06 — Precio en dólares
 07 — Conclusiones
 ```
@@ -62,29 +64,36 @@ El rango efectivo del análisis es **enero 2017 → enero 2026** (intersección 
 
 ---
 
-## Cómo reproducirlo
+## Cómo ejecutarlo
+
+**Opción A — Google Colab (sin instalar nada)**
+
+Hacer clic en el badge de arriba o abrir directamente:
+
+```
+https://colab.research.google.com/github/MartinCarossino/indice-tanque-lleno/blob/main/tanque_lleno.ipynb
+```
+
+La primera celda descarga los datos automáticamente. Ejecutar Runtime → Run all.
+
+**Opción B — Local**
 
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/indice-tanque-lleno
+git clone https://github.com/MartinCarossino/indice-tanque-lleno
 cd indice-tanque-lleno
-
-# 2. Instalar dependencias
 pip install pandas numpy matplotlib seaborn jupyter
-
-# 3. Descargar los datasets en la carpeta data/
-#    (ver enlaces en la sección Datasets)
-
-# 4. Ejecutar el notebook
 jupyter notebook tanque_lleno.ipynb
 ```
+
+Los archivos de datos deben estar en la carpeta `data/`. Ver la sección Datasets para las fuentes de descarga.
 
 ### Estructura de carpetas
 
 ```
 indice-tanque-lleno/
-├── tanque_lleno.ipynb     ← notebook principal
+├── tanque_lleno.ipynb
 ├── README.md
+├── .gitignore
 └── data/
     ├── nafta.csv
     ├── ipc.csv
@@ -96,14 +105,14 @@ indice-tanque-lleno/
 
 ## Limitaciones
 
-- Se usó el precio **promedio nacional** de nafta súper. Los precios varían por provincia y empresa.
+- Se usó el precio promedio nacional de nafta súper. Los precios varían por provincia y empresa.
 - El SMVM no representa el salario real de la mayoría de los trabajadores, sino el piso legal.
-- El tipo de cambio usado es el **oficial BNA**. El dólar blue daría resultados distintos.
+- El tipo de cambio usado es el oficial BNA. El dólar blue daría resultados distintos.
 - El congelamiento de precios de combustibles en 2023 genera un pico artificial en el índice (nov 2023 = 14,1 L/día) que no refleja condiciones de mercado normales.
 
 ---
 
 ## Autor
 
-**Martín** — Desarrollador backend con orientación a análisis de datos  
-[GitHub](https://github.com/tu-usuario) · [LinkedIn](https://linkedin.com/in/tu-usuario)
+**Martín Carossino** — Desarrollador backend con orientación a análisis de datos  
+[GitHub](https://github.com/MartinCarossino)
