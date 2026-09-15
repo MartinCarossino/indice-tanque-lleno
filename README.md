@@ -22,9 +22,10 @@ Ese número — el *índice del tanque lleno* — refleja el poder adquisitivo r
 |---|---|
 | 1 | El precio nominal se multiplicó por **83x**: de $20,71 (ene 2017) a $1.724 (ene 2026) |
 | 2 | En términos reales, la nafta es **18,8% más barata** que en 2017 — la inflación (+10.150%) superó al aumento de la nafta (+8.227%) |
-| 3 | El poder adquisitivo cayó **18,5%**: de 12,9 litros/día en 2017 a 10,6 litros/día en 2026 |
-| 4 | El peor momento fue julio 2022: 5,2 litros/día |
-| 5 | En dólares, el precio promedio fue U$S 1,07 el litro durante 9 años — notablemente estable |
+| 3 | El poder adquisitivo cayó **55%**: de 13,0 litros/día en enero 2017 a 5,8 litros/día en junio 2026 |
+| 4 | El mejor momento fue febrero 2023: 16,9 litros/día — el SMVM subía mientras la nafta aún estaba contenida |
+| 5 | El peor momento fue abril 2026: 5,5 litros/día — salto brusco del precio de la nafta en marzo 2026 |
+| 6 | En dólares, el precio promedio fue U$S 1,07 el litro durante 9 años — notablemente estable |
 
 ---
 
@@ -48,10 +49,10 @@ Ese número — el *índice del tanque lleno* — refleja el poder adquisitivo r
 |---|---|---|
 | Precios en surtidor (nafta súper) | Secretaría de Energía de la Nación | Jun 2016 – Jun 2026 |
 | IPC Nivel General Nacional | INDEC / datos.gob.ar | Dic 2016 – Abr 2026 |
-| Salario Mínimo Vital y Móvil | CNEPySMVyM / datos.gob.ar | Ene 2016 – Ene 2026 |
+| Salario Mínimo Vital y Móvil | CNEPySMVyM / calcularsueldo.com.ar | Ene 2016 – Jun 2026 |
 | Tipo de cambio BNA vendedor | BCRA / apis.datos.gob.ar | Ene 2016 – Feb 2026 |
 
-El rango efectivo del análisis es **enero 2017 → enero 2026** (intersección de los cuatro datasets).
+El rango efectivo del análisis es **enero 2017 → junio 2026** (intersección de los cuatro datasets).
 
 ---
 
@@ -108,11 +109,12 @@ indice-tanque-lleno/
 - Se usó el precio promedio nacional de nafta súper. Los precios varían por provincia y empresa.
 - El SMVM no representa el salario real de la mayoría de los trabajadores, sino el piso legal.
 - El tipo de cambio usado es el oficial BNA. El dólar blue daría resultados distintos.
-- El congelamiento de precios de combustibles en 2023 genera un pico artificial en el índice (nov 2023 = 14,1 L/día) que no refleja condiciones de mercado normales.
+- Los datos de nafta arrancan en junio 2016 pero el IPC base dic-2016 limita el análisis efectivo a partir de enero 2017.
+- En agosto 2025 el SMVM tuvo una reducción nominal por cambio de resolución (Res. 5/2025 a Res. 9/2025), lo que impacta el índice en ese tramo.
 
 ---
 
 ## Autor
 
 **Martín Carossino** — Desarrollador backend con orientación a análisis de datos  
-[GitHub](https://github.com/MartinCarossino)
+[GitHub](https://github.com/MartinCarossino) · [LinkedIn](https://linkedin.com/in/martincarossino)
